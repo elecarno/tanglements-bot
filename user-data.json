@@ -1,0 +1,228 @@
+{
+    "425716345460621332": {
+        "name": "Salvador Petrov",
+        "instance": "d-2",
+        "age": 17,
+        "hp": 3,
+        "credits": 3,
+        "inventory": [
+            [
+                "Chemicals",
+                7
+            ],
+            [
+                "IHC ID Card",
+                1
+            ],
+            [
+                "Kar98k",
+                3,
+                0.35
+            ],
+            [
+                "Lab Equipment",
+                1
+            ],
+            [
+                "Old Electronics",
+                2
+            ],
+            [
+                "Ancient Electronics",
+                1
+            ]
+        ],
+        "hydration": 0.835982060069029,
+        "irradiation": 0.01740625516645846,
+        "sickness": 0.06349934314584826,
+        "water": 1,
+        "pPills": 6,
+        "bPills": 1,
+        "hPills": 18
+    },
+    "902076745551872041": {
+        "name": "Isabella",
+        "instance": "g-2",
+        "age": 14,
+        "hp": 1.9000000000000001,
+        "credits": 0,
+        "inventory": [
+            [
+                "Kar98k",
+                6,
+                0.35
+            ],
+            [
+                "Old Electronics",
+                9
+            ],
+            [
+                "Glow Weeds",
+                3
+            ],
+            [
+                "Bronze Berries",
+                1
+            ],
+            [
+                "IHC ID Card",
+                3
+            ],
+            [
+                "Lab Equipment",
+                6
+            ],
+            [
+                "Chemicals",
+                4
+            ],
+            [
+                "Ancient Electronics",
+                3
+            ]
+        ],
+        "hydration": 0.6240309641631431,
+        "irradiation": 0.2996422365197449,
+        "sickness": 0.253646334966117,
+        "water": 0.33803527630235597,
+        "pPills": 0,
+        "bPills": 2,
+        "hPills": 7
+    },
+    "798518037572878376": {
+        "name": "Gorrister Smith",
+        "instance": "b-2",
+        "age": 45,
+        "hp": 7.3,
+        "credits": 0,
+        "inventory": [
+            [
+                "Old Electronics",
+                9
+            ],
+            [
+                "Kar98k",
+                3,
+                0.35
+            ],
+            [
+                "Bronze Berries",
+                1
+            ]
+        ],
+        "hydration": 0.8771030708515992,
+        "irradiation": 0.013649765957326088,
+        "sickness": 0.14240890149257515,
+        "water": 1,
+        "pPills": 14,
+        "bPills": 2,
+        "hPills": 10
+    },
+    "913095086810751056": {
+        "name": "Alihna Vancouver",
+        "instance": "g-1",
+        "age": 0,
+        "hp": 0.7000000000000002,
+        "credits": 0,
+        "inventory": [
+            [
+                "Old Electronics",
+                5
+            ]
+        ],
+        "hydration": 0.8117105464267251,
+        "irradiation": 0.046787604389178915,
+        "sickness": 0.24331774256048658,
+        "water": 1,
+        "pPills": 0,
+        "bPills": 0,
+        "hPills": 0
+    },
+    "443063275295473685": {
+        "name": "James",
+        "instance": "a-2",
+        "age": -15,
+        "hp": 1,
+        "credits": 0,
+        "inventory": [
+            [
+                "Chemicals",
+                1
+            ],
+            [
+                "Kar98k",
+                1,
+                0.35
+            ],
+            [
+                "Old Electronics",
+                1
+            ],
+            [
+                "Ancient Electronics",
+                3
+            ]
+        ],
+        "hydration": 1,
+        "irradiation": 0,
+        "sickness": 0.09905549514565296,
+        "water": 0.4391153883995712,
+        "pPills": 1,
+        "bPills": 1,
+        "hPills": 0
+    },
+    "801057627618410526": {
+        "name": "Francais Draconious",
+        "instance": "b-1",
+        "age": 0,
+        "hp": -0.2999999999999998,
+        "credits": 0,
+        "inventory": [
+            [
+                "Old Electronics",
+                2
+            ],
+            [
+                "Kar98k",
+                5,
+                0.35
+            ]
+        ],
+        "hydration": 0.7413888354538524,
+        "irradiation": 0.14777695534820237,
+        "sickness": 0.3886217742742244,
+        "water": 1,
+        "pPills": 1,
+        "bPills": 1,
+        "hPills": 0
+    },
+    "571721181078618123": {
+        "name": "Sander Cohen",
+        "instance": "g-2",
+        "age": 69,
+        "hp": 2.1000000000000005,
+        "credits": 0,
+        "inventory": [
+            [
+                "Kar98k",
+                8,
+                0.35
+            ],
+            [
+                "Lab Equipment",
+                1
+            ],
+            [
+                "Ancient Electronics",
+                5
+            ]
+        ],
+        "hydration": 0.8580781964095159,
+        "irradiation": 0.4114485769853511,
+        "sickness": 0.12630020952618032,
+        "water": 0.29105061294983403,
+        "pPills": 0,
+        "bPills": 1,
+        "hPills": 2
+    }
+}
