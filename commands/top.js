@@ -19,17 +19,19 @@ module.exports = {
             let _pPills = config.client.userData[i].pPills
             let _bPills = config.client.userData[i].bPills
             let _hPills = config.client.userData[i].hPills
+            let _fuses = config.client.userData[i].fuses
 
             let net = 0
             for(var j = 0; j < _inventory.length; j++){
                 if(_inventory[j] !== undefined){
                     if(config.items[_inventory[j][0]][0] !== undefined)
-                    net += config.items[_inventory[j][0]][0]*_inventory[j][1]
+                        net += config.items[_inventory[j][0]][0]*_inventory[j][1]
                 }
             }
             net += _pPills*3
             net += _bPills*2
             net += _hPills*5
+            net += _fuses*7
             net += _credits
             data.push([net, i])
         }     

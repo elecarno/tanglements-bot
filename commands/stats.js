@@ -25,6 +25,11 @@ module.exports = {
         let _pPills = config.client.userData[user.id].pPills
         let _bPills = config.client.userData[user.id].bPills
         let _hPills = config.client.userData[user.id].hPills
+        let _fuses = config.client.userData[user.id].fuses
+        let _faction = config.client.userData[user.id].faction
+
+        let _region
+        _region = config.inst[_instance][2][config.client.userData[user.id].region]
 
         let stage
         if(_sickness > 0.3){ stage = 1
@@ -38,9 +43,9 @@ module.exports = {
         .setColor("#b56b2a")
         .setTitle(_name)
         .addFields(
-            {name: "Basic Info", value: "Name: " + _name + "\nAge: " + _age + "\nCredits: ₵" + _credits},
-            {name: "Status", value: "Current Instance: " + _instance +  "\nHealth: " + Math.round(_hp*10000)/100 + "%\nHydration: " +  Math.round(_hydration*10000)/100 + "%\nIrradiation Level: " +  Math.round(_irradiation*10000)/100 + "%\nPerception Sickness: " +  Math.round(_sickness*10000)/100 + "% [Stage " + stage + "]"},
-            {name: "Pouch", value: "Water: " +  Math.round(_water*10000)/100 + "%\nPerception Pills: " + _pPills + "\nNegative Bequerel Pills: " + _bPills + "\nHop Pills: " + _hPills}
+            {name: "Basic Info", value: "Name: " + _name + "\nAge: " + _age + "\nCredits: ₵" + _credits + "\nFaction: " + _faction},
+            {name: "Status", value: "Current Instance: " + _instance + " • Region: " + _region[0] + " [Danger/Loot: " + _region[1] + "]\nHealth: " + Math.round(_hp*10000)/100 + "%\nHydration: " +  Math.round(_hydration*10000)/100 + "%\nIrradiation Level: " +  Math.round(_irradiation*10000)/100 + "%\nPerception Sickness: " +  Math.round(_sickness*10000)/100 + "% [Stage " + stage + "]"},
+            {name: "Pouch", value: "Water: " +  Math.round(_water*10000)/100 + "%\nFuses: " + _fuses + "\nPerception Pills: " + _pPills + "\nNegative Bequerel Pills: " + _bPills + "\nHop Pills: " + _hPills}
         )        
         message.channel.send(newEmbed)
     }

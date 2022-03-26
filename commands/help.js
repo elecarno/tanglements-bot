@@ -28,7 +28,8 @@ module.exports = {
             {name: "gift <@user> <amount> <p | b | h>", value: "gifts pills"},
             {name: "shop", value: "IHC Store, can only use if you are in alpha-2"},
             {name: "buy <item shop index>", value: "buy from the IHC store"},
-            {name: "ihc <p | b | h | m>", value: "Gets supplies or medical attention from the IHC if you are in instance alpha-2"},
+            {name: "fac <p | b | h | m>", value: "Gets supplies or medical attention from your faction"},
+            {name: "hop <instance>", value: "use a hopper"},
         )
         .setFooter("Bot by Elecarno")         
         message.channel.send(newEmbed)

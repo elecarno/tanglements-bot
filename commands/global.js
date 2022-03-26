@@ -25,6 +25,7 @@ module.exports = {
             let _pPills = config.client.userData[i].pPills
             let _bPills = config.client.userData[i].bPills
             let _hPills = config.client.userData[i].hPills
+            let _fuses = config.client.userData[i].fuses
 
             let stage
             if(_sickness > 0.3){ stage = 1
@@ -46,11 +47,12 @@ module.exports = {
             net += _pPills*3
             net += _bPills*2
             net += _hPills*5
+            net += _fuses*7
             net += _credits
 
             newEmbed.addField(_name + ", " + _age + " • Balance: ₵" + _credits + " • Net Worth: ₵" + net, _instance + " • " + Math.round(_hp*10000)/100 + "% HP • " 
             + Math.round(_hydration*10000)/100 + "% Hy • " + Math.round(_irradiation*10000)/100 + "% Ir • " + Math.round(_sickness*10000)/100 + "% PS [" + stage + "]\n"
-            + Math.round(_water*10000)/100 + "% H₂O • p:" + _pPills + " b:" + _bPills + " h:" + _hPills + " Pills • " + items + " Items")
+            + Math.round(_water*10000)/100 + "% H₂O • f:" + _fuses + " p:"+ _pPills + " b:" + _bPills + " h:" + _hPills + " Pills • " + items + " Items")
         }     
         message.channel.send(newEmbed)
     }

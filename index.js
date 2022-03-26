@@ -18,53 +18,65 @@ config.client.on("message", message => {
     else if(command === "enter"){
         config.client.commands.get("enter").execute(message, args, Discord)
     }
-    else if(command == "st" || command == "stats"){
+    else if(command === "st" || command == "stats"){
         config.client.commands.get("stats").execute(message, args, Discord)
     }   
-    else if(command == "setage"){
+    else if(command === "setage"){
         config.client.commands.get("setage").execute(message, args, Discord)
     }   
-    else if(command == "update"){
+    else if(command === "update"){
         config.client.commands.get("update").execute(message, args, Discord)
     }  
-    else if(command == "pill"){
+    else if(command === "pill"){
         config.client.commands.get("pill").execute(message, args, Discord)
     }  
-    else if(command == "loot"){
+    else if(command === "loot"){
         config.client.commands.get("loot").execute(message, args, Discord)
     }  
-    else if(command == "drink"){
+    else if(command === "drink"){
         config.client.commands.get("drink").execute(message, args, Discord)
     }  
-    else if(command == "ihc"){
-        config.client.commands.get("ihc").execute(message, args, Discord)
+    else if(command === "fac"){
+        config.client.commands.get("fac").execute(message, args, Discord)
     }  
-    else if(command == "gift"){
+    else if(command === "gift"){
         config.client.commands.get("gift").execute(message, args, Discord)
     }
-    else if(command == "test"){
+    else if(command === "test"){
         config.client.commands.get("test").execute(message, args, Discord)
     }
-    else if(command == "inv"){
+    else if(command === "inv"){
         config.client.commands.get("inv").execute(message, args, Discord)
     }
-    else if(command == "shop"){
+    else if(command === "shop"){
         config.client.commands.get("shop").execute(message, args, Discord)
     }
-    else if(command == "buy"){
+    else if(command === "buy"){
         config.client.commands.get("buy").execute(message, args, Discord)
     }
-    else if(command == "global"){
+    else if(command === "global"){
         config.client.commands.get("global").execute(message, args, Discord)
     }
-    else if(command == "top"){
+    else if(command === "top"){
         config.client.commands.get("top").execute(message, args, Discord)
     }
-    else if(command == "pouch" || command == "ph"){
+    else if(command === "pouch" || command == "ph"){
         config.client.commands.get("pouch").execute(message, args, Discord)
     }
-    else if(command == "bandage" || command == "bn"){
+    else if(command === "bandage" || command == "bn"){
         config.client.commands.get("bandage").execute(message, args, Discord)
+    }
+    else if(command === "hop" || command === "hopper"){
+        config.client.commands.get("hop").execute(message, args, Discord)
+    }
+    else if(command === "craft"){
+        config.client.commands.get("craft").execute(message, args, Discord)
+    }
+    else if(command === "travel"){
+        config.client.commands.get("travel").execute(message, args, Discord)
+    }
+    else if(command === "data"){
+        config.client.commands.get("data").execute(message, args, Discord)
     }
 })
 config.client.login(token.token)

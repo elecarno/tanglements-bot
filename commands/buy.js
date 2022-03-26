@@ -22,7 +22,7 @@ module.exports = {
                         has = true
                         let logM = config.client.userData[message.author.id].name + " (" + message.author.username + "#" + message.author.discriminator + ") has bought item `" + args[0] + "` (`" +  i + "`) and has `" + config.client.userData[message.author.id].credits + "` credits left"
                         console.log(logM)
-                        config.client.channels.cache.get("955121521574170674").send(logM)
+                        config.client.channels.cache.get(config.logCID).send(logM)
                     }
                 }
                 if(!has){
@@ -33,7 +33,7 @@ module.exports = {
                     
                     let logM = config.client.userData[message.author.id].name + " (" + message.author.username + "#" + message.author.discriminator + ") has bought item `" + args[0] + "` (`" +  i + "`) - an item they did not previously have, and has `" + config.client.userData[message.author.id].credits + "` credits left"
                     console.log(logM)
-                    config.client.channels.cache.get("955121521574170674").send(logM)
+                    config.client.channels.cache.get(config.logCID).send(logM)
                 }
             }
             index++

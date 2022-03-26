@@ -1,9 +1,11 @@
 {
     "425716345460621332": {
         "name": "Salvador Petrov",
-        "instance": "d-2",
+        "instance": "b-1",
+        "region": 0,
         "age": 17,
         "hp": 3,
+        "faction": "IHC",
         "credits": 3,
         "inventory": [
             [
@@ -12,11 +14,11 @@
             ],
             [
                 "IHC ID Card",
-                1
+                2
             ],
             [
                 "Kar98k",
-                3,
+                4,
                 0.35
             ],
             [
@@ -24,27 +26,30 @@
                 1
             ],
             [
-                "Old Electronics",
-                2
+                "Ancient Electronics",
+                1
             ],
             [
-                "Ancient Electronics",
+                "Hopper",
                 1
             ]
         ],
-        "hydration": 0.835982060069029,
-        "irradiation": 0.01740625516645846,
-        "sickness": 0.06349934314584826,
-        "water": 1,
-        "pPills": 6,
+        "hydration": 0.8957681847245307,
+        "irradiation": 0.08039677207310238,
+        "sickness": 0.24370320840537524,
+        "water": 0.631398980430164,
+        "fuses": 4,
+        "pPills": 4,
         "bPills": 1,
-        "hPills": 18
+        "hPills": 25
     },
     "902076745551872041": {
         "name": "Isabella",
-        "instance": "g-2",
+        "instance": "a-1",
+        "region": 0,
         "age": 14,
-        "hp": 1.9000000000000001,
+        "hp": 4.8500000000000005,
+        "faction": "Anarchists",
         "credits": 0,
         "inventory": [
             [
@@ -54,11 +59,11 @@
             ],
             [
                 "Old Electronics",
-                9
+                20
             ],
             [
                 "Glow Weeds",
-                3
+                6
             ],
             [
                 "Bronze Berries",
@@ -79,27 +84,30 @@
             [
                 "Ancient Electronics",
                 3
+            ],
+            [
+                "Hopper",
+                1
             ]
         ],
-        "hydration": 0.6240309641631431,
-        "irradiation": 0.2996422365197449,
-        "sickness": 0.253646334966117,
-        "water": 0.33803527630235597,
+        "hydration": 0.9349611747572996,
+        "irradiation": 0.0906659855025632,
+        "sickness": 0.33730194888434195,
+        "water": -0.0032661216215224,
+        "fuses": 5,
         "pPills": 0,
         "bPills": 2,
-        "hPills": 7
+        "hPills": 16
     },
     "798518037572878376": {
         "name": "Gorrister Smith",
-        "instance": "b-2",
+        "instance": "b-1",
+        "region": 0,
         "age": 45,
         "hp": 7.3,
+        "faction": "IHC",
         "credits": 0,
         "inventory": [
-            [
-                "Old Electronics",
-                9
-            ],
             [
                 "Kar98k",
                 3,
@@ -108,41 +116,63 @@
             [
                 "Bronze Berries",
                 1
+            ],
+            [
+                "Lab Equipment",
+                1
+            ],
+            [
+                "Ancient Electronics",
+                1
+            ],
+            [
+                "Hopper",
+                1
             ]
         ],
-        "hydration": 0.8771030708515992,
-        "irradiation": 0.013649765957326088,
-        "sickness": 0.14240890149257515,
+        "hydration": 0.9577218765586024,
+        "irradiation": 0,
+        "sickness": 0.16599072932424508,
         "water": 1,
-        "pPills": 14,
-        "bPills": 2,
-        "hPills": 10
+        "fuses": 23,
+        "pPills": 17,
+        "bPills": 6,
+        "hPills": 0
     },
     "913095086810751056": {
-        "name": "Alihna Vancouver",
-        "instance": "g-1",
-        "age": 0,
-        "hp": 0.7000000000000002,
+        "name": "Vergil",
+        "instance": "a-2",
+        "region": 0,
+        "age": 30,
+        "hp": 3,
+        "faction": "IHC",
         "credits": 0,
         "inventory": [
             [
                 "Old Electronics",
-                5
+                6
+            ],
+            [
+                "Hopper",
+                1
             ]
         ],
-        "hydration": 0.8117105464267251,
-        "irradiation": 0.046787604389178915,
-        "sickness": 0.24331774256048658,
+        "hydration": 0.9699253483311445,
+        "irradiation": 0.22304273023648255,
+        "sickness": 0.027229980587175805,
         "water": 1,
-        "pPills": 0,
+        "fuses": 8,
+        "pPills": 1,
         "bPills": 0,
-        "hPills": 0
+        "hPills": 4
     },
     "443063275295473685": {
         "name": "James",
-        "instance": "a-2",
+        "instance": "a-1",
+        "region": 0,
         "age": -15,
         "hp": 1,
+        "faction": "",
         "credits": 0,
         "inventory": [
             [
@@ -161,46 +191,58 @@
             [
                 "Ancient Electronics",
                 3
+            ],
+            [
+                "Butter Berries",
+                1
             ]
         ],
-        "hydration": 1,
+        "hydration": 0.9059010531985823,
         "irradiation": 0,
-        "sickness": 0.09905549514565296,
+        "sickness": 0.16829928231893365,
         "water": 0.4391153883995712,
+        "fuses": 0,
         "pPills": 1,
         "bPills": 1,
-        "hPills": 0
+        "hPills": 2
     },
     "801057627618410526": {
-        "name": "Francais Draconious",
-        "instance": "b-1",
-        "age": 0,
-        "hp": -0.2999999999999998,
+        "name": "Tepper",
+        "instance": "g-1",
+        "region": 0,
+        "age": 23,
+        "hp": 1,
+        "faction": "",
         "credits": 0,
         "inventory": [
             [
-                "Old Electronics",
-                2
+                "Butter Berries",
+                3
             ],
             [
-                "Kar98k",
-                5,
-                0.35
+                "Glow Weeds",
+                1
+            ],
+            [
+                "Old Electronics",
+                3
             ]
         ],
-        "hydration": 0.7413888354538524,
-        "irradiation": 0.14777695534820237,
-        "sickness": 0.3886217742742244,
-        "water": 1,
-        "pPills": 1,
-        "bPills": 1,
-        "hPills": 0
+        "hydration": 0.9717121774096004,
+        "irradiation": 0.12540100769936902,
+        "sickness": 0.32488280522074553,
+        "water": 0.8122682498567488,
+        "pPills": 0,
+        "bPills": 0,
+        "hPills": 4
     },
     "571721181078618123": {
         "name": "Sander Cohen",
-        "instance": "g-2",
+        "instance": "a-1",
+        "region": 0,
         "age": 69,
-        "hp": 2.1000000000000005,
+        "hp": 1.7000000000000008,
+        "faction": "Anarchists",
         "credits": 0,
         "inventory": [
             [
@@ -214,15 +256,36 @@
             ],
             [
                 "Ancient Electronics",
+                6
+            ],
+            [
+                "Butter Berries",
+                3
+            ],
+            [
+                "Glow Weeds",
+                4
+            ],
+            [
+                "Bronze Berries",
                 5
+            ],
+            [
+                "Old Electronics",
+                7
+            ],
+            [
+                "Hopper",
+                1
             ]
         ],
-        "hydration": 0.8580781964095159,
-        "irradiation": 0.4114485769853511,
-        "sickness": 0.12630020952618032,
-        "water": 0.29105061294983403,
-        "pPills": 0,
-        "bPills": 1,
-        "hPills": 2
+        "hydration": 0.6530191362273657,
+        "irradiation": 0.21537439317274315,
+        "sickness": 0.19165186653862573,
+        "water": 0.28626136009142433,
+        "fuses": 5,
+        "pPills": 4,
+        "bPills": 6,
+        "hPills": 7
     }
 }

@@ -23,7 +23,7 @@ module.exports = {
                 message.channel.send("max hp from bandaging")
             }
             console.log(logM)
-            config.client.channels.cache.get("955121521574170674").send(logM)
+            config.client.channels.cache.get(config.logCID).send(logM)
 
             fs.writeFile("./user-data.json", JSON.stringify(config.client.userData, null, 4), err => {
                 if (err) throw err

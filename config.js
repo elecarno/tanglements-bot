@@ -23,45 +23,74 @@ exports.instances = [
     "d-1", "d-2",
 ]
 
+// standard loot
 const a1l = ["Old Electronics", "hPills"]
-const a2l = ["Water", "hPills"]
-const a3l = ["Bronze Berries", "Butter Berries", "Glow Weeds", "hPills"]
-const b1l = ["Kar98k", "hPills"]
+const a2l = ["Water"]
+const a3l = ["Bronze Berries", "Butter Berries", "Glow Weeds"]
+const b1l = ["hPills"]
 const b2l = ["hPills"]
-const g1l = ["Old Electronics", "bPills", "hPills"]
-const g2l = ["Ancient Electronics", "hPills"]
-const g3l = ["bPills", "pPills", "Old Electronics", "Kar98k", "hPills"]
-const d1l = ["Chemicals", "Lab Equipment", "hPills", "Ancient Electronics"]
+const g1l = ["Old Electronics"]
+const g2l = ["Ancient Electronics"]
+const g3l = ["bPills", "pPills"]
+const d1l = ["Chemicals", "Lab Equipment"]
 const d2l = ["hPills"]
 
-const a1e = [["you hear a scream nearby", 0]]
-const a2e = [["you hear roars in the distance", 0], ["a butterfly lands on your shoulder and heals you", 1]]
-const a3e = [["you are attacked by a Hyper Lizard", -0.3], ["you get mauled by a giant snake", -0.6], ["you are attacked and strangled by a giant centipede", -0.4]]
-const b1e = [["you get shot in the shoulder by a stray bullet", -0.5]]
-const b2e = [["you are attacked by a Void Crawler", -0.25]]
-const g1e = [["you are attacked by a Radio Cricket", -0.2]]
-const g2e = [["the books grant you strength", 0.1]]
-const g3e = [["you get your face ripped off by a chuppy", -1], ["you get bitten by a chuppy", -0.8]]
-const d1e = [["you are attacked by a Lab Serpent", -0.7]]
-const d2e = [["you are attacked by a Void Bug", -0.05]]
+// valuable loot
+const a1v = ["Kar98k"]
+const a2v = ["Water", "hPills"]
+const a3v = ["hPills"]
+const b1v = ["Kar98k"]
+const b2v = ["hPills"]
+const g1v = ["bPills", "hPills"]
+const g2v = ["Ancient Electronics", "hPills"]
+const g3v = ["Old Electronics", "Kar98k", "hPills"]
+const d1v = ["hPills", "Ancient Electronics"]
+const d2v = ["hPills"]
 
-const a1 = [a1l, a1e]
-const a2 = [a2l, a2e]
-const a3 = [a3l, a3e]
-const b1 = [b1l, b1e]
-const b2 = [b2l, b2e]
-const g1 = [g1l, g1e]
-const g2 = [g2l, g2e]
-const g3 = [g3l, g3e]
-const d1 = [d1l, d1e]
-const d2 = [d2l, d2e]
+// units
+const a1u = ["Old Electronics"]
+const a2u = ["Water", "hPills"]
+const a3u = ["hPills"]
+const b1u = ["Kar98k"]
+const b2u = ["hPills"]
+const g1u = ["bPills", "hPills"]
+const g2u = ["Ancient Electronics", "hPills"]
+const g3u = ["Old Electronics", "Kar98k", "hPills"]
+const d1u = ["hPills", "Ancient Electronics"]
+const d2u = ["hPills"]
+
+// regions - [name, danger rating, radiation rating]
+const a1r = [["Streets", 1], ["Anarchist Camp", 0]]
+const a2r = [["Forest", 1], ["IHC Main Base", 0], ["Alpha 2 Village", 0]]
+const a3r = [["Lower Forest", 1], ["Upper Forest", 2]]
+const b1r = [["Wasteland", 2], ["Warzone", 3]]
+const b2r = [["Void", 2]]
+const g1r = [["Outside the Reactor", 0, 1], ["Reactor 1", 1, 1], ["Destroyed Reactor", 2, 2]]
+const g2r = [["Library Hall", 1, 1], ["Sun Tower", 1, 2]]
+const g3r = [["Sewers", 3, 3], ["Halls", 2, 3], ["IHC Quaratine Border", 1, 3]]
+const d1r = [["Laboratory", 0], ["Abandoned Laboratory", 1], ["Reactor Room", 2, 3], ["Site Delta"]]
+const d2r = [["Void", 1]]
+
+// all instance data
+const a1 = [a1l, a1v, a1r]
+const a2 = [a2l, a2v, a2r]
+const a3 = [a3l, a3v, a3r]
+const b1 = [b1l, b1v, b1r]
+const b2 = [b2l, b2v, b2r]
+const g1 = [g1l, g1v, g1r]
+const g2 = [g2l, g2v, g2r]
+const g3 = [g3l, g3v, g3r]
+const d1 = [d1l, d1v, d1r]
+const d2 = [d2l, d2v, d2r]
 
 exports.inst = {"a-1": a1, "a-2": a2, "a-3": a3, "b-1": b1, "b-2": b2,"g-1": g1, "g-2": g2, "g-3": g3, "d-1": d1, "d-2": d2}
 
 exports.items = {
     "IHC ID Card": [0], "Bronze Berries": [2], "Butter Berries": [2], "Old Electronics": [3], "Glow Weeds" : [4], "Chemicals" : [7], 
-    "Lab Equipment": [15], "Ancient Electronics": [30], "Bag of Chuppy Blood": [120], "Kar98k": [50, 0.35],
+    "Lab Equipment": [15], "Ancient Electronics": [30], "Bag of Chuppy Blood": [120], "Kar98k": [50, 0.35], "Hopper": [250]
 }
+
+exports.logCID = "955121521574170674"
 
 exports.client = client
 exports.prefix = prefix

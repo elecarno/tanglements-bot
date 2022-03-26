@@ -5,21 +5,23 @@ module.exports = {
     name: "drink",
     description: "lets the user drink",
     execute(message, args, Discord){
+        let logName = config.client.userData[message.author.id].name + " (" + message.author.username + "#" + message.author.discriminator + ")"
         let _instance = config.client.userData[message.author.id].instance
         let logM
         if (config.client.userData[message.author.id].water > 0){
             config.client.userData[message.author.id].water -= (1-config.client.userData[message.author.id].hydration)
             config.client.userData[message.author.id].hydration = 1
             message.channel.send(config.client.userData[message.author.id].name + " is now fully hydrated and has " + Math.round(config.client.userData[message.author.id].water*10000)/100 + "% water left")
-            logM = config.client.userData[message.author.id].name + " (" + message.author.username + "#" + message.author.discriminator + ") restored their hydration in `" + _instance + "`" 
+            logM = logName + " restored their hydration in `" + _instance + "`" 
         }
         else {
-            logM = config.client.userData[message.author.id].name + " (" + message.author.username + "#" + message.author.discriminator + ") attempted to restore their hydration in `" + _instance + "`"           
+            logM = logName + " attempted to restore their hydration in `" + _instance + "`"           
             message.channel.send("no water left")
         }
         console.log(logM)
-        config.client.channels.cache.get("955121521574170674").send(logM)
+        config.client.channels.cache.get(config.logCID).send(logM)
 
+        /*
         if(Math.random() < 0.35){
             for (var i in config.inst){
                 if (i === _instance){
@@ -32,10 +34,11 @@ module.exports = {
                 
                     let logM2 = config.client.userData[message.author.id].name + " (" + message.author.username + "#" + message.author.discriminator + ") recieved the event: `[" + lootEvent + "]` while restoring their hydration, their hp is now:  " + config.client.userData[message.author.id].hp
                     console.log(logM2)
-                    config.client.channels.cache.get("955121521574170674").send(logM2)
+                    config.client.channels.cache.get(config.logCID).send(logM2)
                 }
             }
         }
+        */
 
         fs.writeFile("./user-data.json", JSON.stringify(config.client.userData, null, 4), err => {
             if (err) throw err

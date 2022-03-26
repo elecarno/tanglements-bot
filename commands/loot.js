@@ -14,8 +14,10 @@ module.exports = {
     if (talkedRecently.has(message.author.id)) {
             message.channel.send("On cooldown");
     } else {
+        let logName = config.client.userData[message.author.id].name + " (" + message.author.username + "#" + message.author.discriminator + ")"
         let _instance = config.client.userData[message.author.id].instance
         let _sickness = config.client.userData[message.author.id].sickness
+        let _region = config.inst[_instance][2][config.client.userData[message.author.id].region]
         let lootToGive
         let giveable = true
         let sickened = false
@@ -25,18 +27,30 @@ module.exports = {
             giveable = false
             message.channel.send("**Your sickness prevents you from searching the nearby area**")
                    
-            let logM = config.client.userData[message.author.id].name + " (" + message.author.username + "#" + message.author.discriminator + ") attempted to loot in `" +  _instance + "` but could not due to a `sickness` of `" + _sickness + "`"
+            let logM = logName + " attempted to loot in `" +  _instance + "` but could not due to a `sickness` of `" + _sickness + "`"
             console.log(logM)
-            config.client.channels.cache.get("955121521574170674").send(logM)
+            config.client.channels.cache.get(config.logCID).send(logM)
         }
 
         for (var i in config.inst){
             if (i === _instance && !sickened){
-                lootToGive = config.inst[i][0][Math.floor(Math.random()*config.inst[i][0].length)];
+                if(_region[1] === 0){
+                    let logM = logName + " tried to loot in a lootless region in `" +  _instance + "`"
+                    console.log(logM)
+                    config.client.channels.cache.get(config.logCID).send(logM)
+                    message.channel.send("no loot in this region")
+                    giveable = false
+                }
+                else{
+                    if(_region[1] === 1)
+                        lootToGive = config.inst[i][0][Math.floor(Math.random()*config.inst[i][0].length)];
+                    else if(_region[1] > 1)
+                        lootToGive = config.inst[i][1][Math.floor(Math.random()*config.inst[i][1].length)];
                 
-                let logM = config.client.userData[message.author.id].name + " (" + message.author.username + "#" + message.author.discriminator + ") looted `" + lootToGive + "` in `" +  _instance + "`"
-                console.log(logM)
-                config.client.channels.cache.get("955121521574170674").send(logM)
+                    let logM = logName + " looted `" + lootToGive + "` in `" +  _instance + "`"
+                    console.log(logM)
+                    config.client.channels.cache.get(config.logCID).send(logM)
+                }
             }
         }
 
@@ -85,9 +99,9 @@ module.exports = {
         config.client.userData[message.author.id].sickness += Math.random()/20
         config.client.userData[message.author.id].hydration -= Math.random()/20
         if(_instance.charAt(0) === "g")
-            config.client.userData[message.author.id].irradiation += Math.random()/20
+            config.client.userData[message.author.id].irradiation += Math.random()/20 * _region[2]
         
-        // events
+        /*
         if(Math.random() < (0.3 + _sickness) && !sickened){
             for (var i in config.inst){
                 if (i === _instance){
@@ -100,10 +114,11 @@ module.exports = {
                    
                     let logM = config.client.userData[message.author.id].name + " (" + message.author.username + "#" + message.author.discriminator + ") recieved the event: `[" + lootEvent + "]` while looting, their hp is: `" + config.client.userData[message.author.id].hp + "`"
                     console.log(logM)
-                    config.client.channels.cache.get("955121521574170674").send(logM)
+                    config.client.channels.cache.get(config.logCID).send(logM)
                 }
             }
         }
+        */
 
         fs.writeFile("./user-data.json", JSON.stringify(config.client.userData, null, 4), err => {
             if (err) throw err

@@ -20,13 +20,14 @@ module.exports = {
         let _pPills = config.client.userData[user.id].pPills
         let _bPills = config.client.userData[user.id].bPills
         let _hPills = config.client.userData[user.id].hPills
+        let _fuses = config.client.userData[user.id].fuses
 
         const newEmbed = new Discord.MessageEmbed()
         .setColor("#b56b2a")
         .setTitle(_name + "'s Pouch")
         .addFields(
             {name: "Basics", value: "Water: " +  Math.round(_water*10000)/100 + "%\nCredits: ₵" + _credits},
-            {name: "Pill", value: "Perception Pills: " + _pPills + "\nNegative Bequerel Pills: " + _bPills + "\nHop Pills: " + _hPills}
+            {name: "Pills & Fuses", value: "Fuses: " + _fuses + "\nPerception Pills: " + _pPills + "\nNegative Bequerel Pills: " + _bPills + "\nHop Pills: " + _hPills}
         )        
         message.channel.send(newEmbed)
     }
